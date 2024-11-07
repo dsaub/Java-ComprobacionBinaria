@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Ordenador">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/Ordenador.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="OrdenarArrays:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OrdenarArrays_jar</output-path>
+    <root id="root">
+      <element id="archive" name="OrdenarArrays.jar">
+        <element id="module-output" name="OrdenarArrays" />
+      </element>
+      <element id="library" level="project" name="Ordenador" />
+    </root>
+  </artifact>
+</component>
