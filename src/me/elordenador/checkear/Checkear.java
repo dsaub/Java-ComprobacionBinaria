@@ -38,40 +38,14 @@ public class Checkear {
         int n = sc.nextInt(); sc.nextLine();
 
 
-        int izq = 0;
-        int der = array.length - 1;
-        int medio;
-        boolean salida = false;
-        boolean encontrado = false;
+        int pos = Buscar.busquedaSecuencial(array, n);
 
-        while (!salida) {
-            medio = (der - izq) / 2 + izq;
-            if (n < array[medio]) {
-                // El numero n es menor, probablemente este a la derecha
-                der = medio;
-            } else if (n > array[medio]) {
-                // El numero n es mayor, probablemente este a la izquierda
-                izq = medio;
-            } else {
-                salida = true;
-                encontrado = true;
-
-            }
-            if ((der-izq) == 1) {
-                salida = true;
-                if (izq == n || der == n) {
-                    encontrado = true;
-                }
-            }
-
-        }
-
-
-
-        if (encontrado) {
-            System.out.println("He encontrado el numero");
+        if (pos < 0) {
+            System.out.println("No se puede encontrar el numero");
         } else {
-            System.out.println("No encontrado el numero");
+            System.out.println("El numero ha sido encontrado, esta en la posición: " + pos);
         }
     }
+
+
 }
